@@ -1,0 +1,7 @@
+{
+  "name": "srmis-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
