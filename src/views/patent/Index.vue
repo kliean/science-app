@@ -1,15 +1,18 @@
 <template>
   <ion-page>
-    <ion-header>
+    <!-- <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
         <ion-title>Patent List</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
 
     <ion-content class="ion-padding">
+      <div style="height: 200px">
+        <carousel></carousel>
+      </div>
       <ion-searchbar
         show-clear-button="always"
         :clear-icon="trashBin"
@@ -62,7 +65,9 @@ import {
   IonRow,
   IonCol,
 } from "@ionic/vue";
+import Carousel from "./Carousel.vue";
 import { trashBin } from "ionicons/icons";
+import CarouselVue from "./Carousel.vue";
 export default {
   data() {
     return {
@@ -2685,6 +2690,7 @@ export default {
     IonGrid,
     IonRow,
     IonCol,
+    Carousel,
   },
 };
 </script>
